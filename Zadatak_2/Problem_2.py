@@ -10,7 +10,7 @@ def BkgPDF(x,b,tau):
 def TotalPDF(x, s, b, mu, sigma, tau):
     return s + b, s * truncnorm.pdf(x, 0, 10, mu, sigma) + b * truncexpon.pdf(x, 0, 10, 0, tau)
  
-x = uproot.open("~/GeneratorScripts/SigBkg_Mix.root")["tree"]["InvMass"]
+x = uproot.open("/home/public/data/SigBkg_Mix.root")["tree"]["InvMass"]
 x=np.array(x)
 
 c = cost.ExtendedUnbinnedNLL(x, TotalPDF)
