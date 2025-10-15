@@ -1,6 +1,0 @@
-*.exe
-*.root
-*.o
-__pycache__/
-*.pyc
-*.pyo
