@@ -37,7 +37,7 @@ plt.xlabel(r"$\overline{h}$[cm]")
 plt.legend()
 plt.savefig("SpainVsFrance.pdf")
 p_SF = 1 - len(H_France[H_France>AvgHeightObs])/len(H_Spain[H_Spain<AvgHeightObs]) #H1 and H0 total lengths cancel out
-print(f"Spain VS France: Rejecting HO with {p_SF*100}% CL") 
+print(f"Spain VS France: Rejecting H1 with {p_SF*100}% CL") 
 
 #Spain VS Italy
 plt.figure(2)
@@ -48,7 +48,7 @@ plt.xlabel(r"$\overline{h}$[cm]")
 plt.legend()
 plt.savefig("SpainVsItaly.pdf")
 p_SI = 1 - len(H_Italy[H_Italy>AvgHeightObs])/len(H_Spain[H_Spain<AvgHeightObs])
-print(f"Spain VS Italy: Rejecting HO with {p_SI*100}% CL") 
+print(f"Spain VS Italy: Rejecting H1 with {p_SI*100}% CL") 
 
 #Spain VS Netherlands
 plt.figure(3)
@@ -59,4 +59,4 @@ plt.xlabel(r"$\overline{h}$[cm]")
 plt.legend()
 plt.savefig("SpainVsNetherlands.pdf")
 p_SN = 1 - len(H_Netherlands[H_Netherlands<AvgHeightObs])/len(H_Spain[H_Spain>AvgHeightObs])
-print(f"Spain VS Netherlands: Rejecting HO with {p_SN*100}% CL")
+print(f"Spain VS Netherlands: Rejecting H1 with {p_SN*100}% CL")
